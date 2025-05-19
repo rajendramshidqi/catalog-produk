@@ -35,6 +35,7 @@
             <!-- partial -->
             <div class="main-panel">
                 @yield('content')
+                
             </div>
         </div>
     </div>

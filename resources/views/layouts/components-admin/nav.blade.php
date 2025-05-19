@@ -82,9 +82,15 @@
                       <a class="dropdown-item preview-item">
                           <i class="icon-head"></i> Profile
                       </a>
-                      <a class="dropdown-item preview-item">
-                          <i class="icon-inbox"></i> Logout
-                      </a>
+                      <a href="{{ route('logout') }}"
+                    onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();"><i
+                        class="fa fa-sign-out fa-fw"></i> Logout</a>
+                </a>
+
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                    @csrf
+                </form>
                   </div>
               </li>
               <li class="nav-item dropdown mr-4 d-lg-flex d-none">

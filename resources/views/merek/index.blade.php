@@ -1,6 +1,9 @@
 @extends('layouts.admin')
 @section('content')
  <div class="card-body">
+    <a href="{{ route('merek.create') }}" class="btn btn-sm btn-primary"
+                                    style="float:right">Tambah</a>
+
                    <table class="table">
                     <thead>
                         <tr>

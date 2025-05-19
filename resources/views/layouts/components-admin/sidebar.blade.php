@@ -4,7 +4,7 @@
              <img src="{{asset('assets/admin/images/faces/face28.png')}}">
          </div>
          <div class="user-name">
-             Edward Spencer
+             ADMIN SEPATU
          </div>
          <div class="user-designation">
              Developer
