@@ -23,7 +23,7 @@
           </ul>
           <ul class="navbar-nav navbar-nav-right">
               <li class="nav-item dropdown d-lg-flex d-none">
-                   <a href="{{ route('produk.create') }}" class="btn btn-info font-weight-bold">+ Create New</a>
+                   <a href="" class="btn btn-info font-weight-bold">+ Create New</a>
               </li>
               <li class="nav-item dropdown d-flex">
                   <a class="nav-link count-indicator dropdown-toggle d-flex justify-content-center align-items-center"

@@ -115,7 +115,7 @@
                     {{-- Tombol Submit --}}
                     <div class="mb-2">
                         <button class="btn btn-primary" type="submit">Simpan</button>
-                        <a href="index"></a>
+                        <a href="{{ route('produk.index') }}" class="btn btn-secondary">Kembali</a>
                     </div>
                 </form>
 

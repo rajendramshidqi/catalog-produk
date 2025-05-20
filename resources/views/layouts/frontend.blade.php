@@ -40,27 +40,27 @@
     <div class="brands-area d-flex align-items-center justify-content-between">
         <!-- Brand Logo -->
         <div class="single-brands-logo">
-            <img src="{{asset('assets/frontend/img/core-img/brand1.png')}}" alt="">
+            <img src="{{asset('assets/frontend/img/core-img/brd.png')}}" alt="">
         </div>
         <!-- Brand Logo -->
         <div class="single-brands-logo">
-            <img src="{{asset('assets/frontend/img/core-img/brand2.png')}}" alt="">
+            <img src="{{asset('assets/frontend/img/core-img/brd2.png')}}" alt="">
         </div>
         <!-- Brand Logo -->
         <div class="single-brands-logo">
-            <img src="{{asset('assets/frontend/img/core-img/brand3.png')}}" alt="">
+            <img src="{{asset('assets/frontend/img/core-img/log8.png')}}" alt="">
         </div>
         <!-- Brand Logo -->
         <div class="single-brands-logo">
-            <img src="{{asset('assets/frontend/img/core-img/brand4.png')}}" alt="">
+            <img src="{{asset('assets/frontend/img/core-img/brd3.png')}}" alt="">
         </div>
         <!-- Brand Logo -->
         <div class="single-brands-logo">
-            <img src="{{asset('assets/frontend/img/core-img/brand5.png')}}" alt="">
+            <img src="{{asset('assets/frontend/img/core-img/brd5.png')}}" alt="">
         </div>
         <!-- Brand Logo -->
         <div class="single-brands-logo">
-            <img src="{{asset('assets/frontend/img/core-img/brand6.png')}}" alt="">
+            <img src="{{asset('assets/frontend/img/core-img/brd7.png')}}" alt="">
         </div>
     </div>
     <!-- ##### Brands Area End ##### -->

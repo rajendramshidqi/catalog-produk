@@ -8,7 +8,7 @@
                     <div class="hero-content">
                         <h6>asoss</h6>
                         <h2>New Collection</h2>
-                        <a href="#" class="btn essence-btn">view collection</a>
+                        <a href="{{ url('shop')}}" class="btn essence-btn">view collection</a>
                     </div>
                 </div>
             </div>
@@ -26,7 +26,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="cta-content bg-img background-overlay"
-                        style="background-image: url('assets/frontend/img/bg-img/bg-5.jpg');">
+                        style="background-image: url('assets/frontend/img/bg-img/images2.jpg');">
                         <div class="h-100 d-flex align-items-center justify-content-end">
                             <div class="cta--text">
                                 <h6>-60%</h6>
@@ -83,16 +83,19 @@
                                 <!-- Product Description -->
                                 <div class="product-description">
                                     <span>{{ $data->merek->nama_merek }}</span>
-                                    <a href="single-product-details.html">
-                                        <h6>{{$data->jenis_produk}}</h6>
+                                    <a href="{{ route('details', $data->id) }}">
+                                        <h6>{{ $data->jenis_produk }}</h6>
                                     </a>
+                                    
+                                        
+                                    
                                     <p class="product-price"><td scope="row">{{ number_format($data->harga, 0, ',', '.') }}</td></p>
 
                                     <!-- Hover Content -->
                                     <div class="hover-content">
                                         <!-- Add to Cart -->
                                         <div class="add-to-cart-btn">
-                                            <a href="#" class="btn essence-btn">Add to Cart</a>
+                                            <a href="" class="btn essence-btn">Add to Cart</a>
                                         </div>
                                     </div>
                                 </div>

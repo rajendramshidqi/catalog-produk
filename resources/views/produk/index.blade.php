@@ -5,7 +5,8 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">Daftar</h1>
-
+                    <a href="{{ route('produk.create') }}" class="btn btn-sm btn-primary"
+                    style="float:right">Tambah</a>
 
                 </div>
                 <div class="card-body">
