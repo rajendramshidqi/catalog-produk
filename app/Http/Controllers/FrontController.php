@@ -28,6 +28,9 @@ class FrontController extends Controller
         $keyword = $request->keyword;
 
         $produk = Produk::where('jenis_produk', 'LIKE', "%{$keyword}%")
+        ->orWhereHas('kategori', function ($q) use ($keyword) {
+            $q->where('kategori', 'LIKE', "%{$keyword}%");
+        })
             ->orWhereHas('merek', function ($q) use ($keyword) {
                 $q->where('nama_merek', 'LIKE', "%{$keyword}%");
             })

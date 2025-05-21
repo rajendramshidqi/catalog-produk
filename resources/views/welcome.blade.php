@@ -109,7 +109,6 @@
 
                                     <!-- Hover Content -->
                                     <div class="hover-content">
-                                        
                                         <!-- Add to Cart -->
 
                                     </div>

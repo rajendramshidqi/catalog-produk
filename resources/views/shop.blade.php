@@ -1,13 +1,34 @@
 @extends('layouts.frontend')
-
 @section('content')
-    <div class="breadcumb_area bg-img" style="background-image: url('assets/frontend/img/bg-img/bg1.jpg');">
+    <div class=" bg-img">
+        <style>
+            .background-section {
+                background-image: url('{{ asset('assets/frontend/img/bg-img/bg1.jpg') }}');
+                background-size: cover;
+                background-position: center;
+                width: 100%;
+                height: 50vh;
+                /* Atau bisa juga 50c jika dimaksudkan satuan custom */
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .page-title {
+                font-size: 2.5rem;
+                color: black;
+                font-weight: bold;
+            }
+        </style>
+
+
+        <div class="background-section">
+            <h1 class="page-title"></h1>
+        </div>
         <div class="container h-100">
             <div class="row h-100 align-items-center">
                 <div class="col-12">
-                    <div class="page-title text-center">
-                        <h2>dresses</h2>
-                    </div>
+
                 </div>
             </div>
         </div>
@@ -111,10 +132,17 @@
                                             <a href="{{ route('details', $data->id) }}">
                                                 <h6>{{ $data->jenis_produk }}</h6>
                                             </a>
-                                            <p class="product-price">{{ number_format($data->harga, 0, ',', '.') }}</p>
+                                            <p class="product-price text-danger font-weight-bold">
+                                                {{ number_format($data->harga, 0, ',', '.') }}</p>
 
                                             <!-- Hover Content -->
                                             <div class="hover-content">
+                                                <div class="add-to-cart-btn mt-3">
+                                                    <a href="{{ route('details', $data->id) }}"
+                                                        class="btn btn-sm btn-outline-dark w-100">
+                                                        Lihat Detail
+                                                    </a>
+                                                </div>
                                                 <!-- Add to Cart -->
                                                 <div class="add-to-cart-btn mb-2">
 
@@ -134,7 +162,7 @@
                         </div>
                     </div>
                     <!-- Pagination -->
-                   
+
                 </div>
             </div>
         </div>
