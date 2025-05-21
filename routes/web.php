@@ -6,6 +6,7 @@ use App\Http\Controllers\JenisController;
 use App\Http\Controllers\KategoriController;
 use App\Http\Controllers\MerekController;
 use App\Http\Controllers\ProdukController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,6 +22,10 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [FrontController::class, 'index']);
 Route::get('shop', [FrontController::class, 'shop']);
 Route::get('/produk/{id}', [FrontController::class, 'show'])->name('details');
+Route::get('/search', [FrontController::class, 'search'])->name('search');
+
+
+
 
 Auth::routes();
 Route::group(['prefix' => 'admin', 'middleware' => ['auth']], function () {

@@ -23,6 +23,8 @@
                     <div class="single_product_desc">
                         <h3 class="fw-bold mb-2">{{ $produk->jenis_produk }}</h3>
                         <p class="mb-1 text-muted">Merek: <strong>{{ $produk->merek->nama_merek }}</strong></p>
+
+
                         <p class="mb-1 text-muted">Kategori: <strong>{{ $produk->kategori->kategori ?? '-' }}</strong>
                         </p>
                         <p class="mb-3 text-muted">Stok: <strong>{{ $produk->stok }}</strong></p>
@@ -39,10 +41,16 @@
                         </div>
 
                         <!-- Tombol -->
-                        <!-- Tombol -->
-                        <a href="{{ url('shop')}}" class="btn essence-btn">
+                        <a href="https://wa.me/6285156647699?text={{ urlencode('Halo, saya tertarik dengan produk ' . $produk->jenis_produk . ' dari merek ' . $produk->merek->nama_merek . '. Apakah masih tersedia?') }}"
+                            target="_blank" class="btn essence-btn mt-3" style="background-color: #25D366; color: white;">
+                            Pesan via WhatsApp
+                        </a>
+                        <a href="{{ url('shop') }}" class="btn essence-btn">
                             ← Kembali ke Shop
                         </a>
+                        <!-- Tombol -->
+
+
 
                     </div>
                 </div>
